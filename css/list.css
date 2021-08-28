@@ -14,18 +14,18 @@
   color: #4d4d4d;
 }
 
-.categories-list-item:not(:last-child) {
+/* .categories-list li:not(:last-child) {
   margin-right: 60px;
-}
+} */
 
-.categories-list-item img {
+.categories-list li img {
   margin-bottom: 10px;
 }
 
-.categories-list-item:hover .categories-list-text {
+.categories-list li:hover .categories-list-text {
   color: #e65d40;
 }
-.categories-list-item a {
+.categories-list li a {
   background-size: contain;
   background-position: left;
   display: block;
@@ -33,18 +33,20 @@
   height: 30px;
   margin-bottom: 10px;
 }
+
 .right {
   opacity: 0.3;
   transform: rotate(-45deg);
   margin-left: 80px;
 }
-.categories-list-item:hover .right {
+
+.categories-list li:hover .right {
   opacity: 1;
 }
 
 .categories-list-text {
   margin-left: 15px;
-  /* margin-right: 60px; */
+  margin-right: 60px;
 }
 i {
   border: solid #e65d40;
@@ -53,96 +55,160 @@ i {
   padding: 3px;
 }
 
+
+/* .categories-list { стили}
+.categories-list li{ стили}
+.categories-list li a{ стили}
+.categories-list li ul{ стили}
+.categories-list li ul li{ стили} */
+
 .categories-list {
   margin-top: 20px;
 }
 
-.categories-list-item {
-  position: relative;
-  display: flex;
-}
-/* .categories-list-item:hover .categories-list-item__list-second {
-  display: block;
-}
-
-.categories-list-item:hover .categories-list-item__list-second li ul {
-  display: none;
-}
-
-.categories-list-item a {
-  display: block;
-}
-.categories-list-item a:hover {
-  background-color: #5d99cf;
-}
-.categories-list-item:hover .categories-list-item__list-second li ul {
-  display: block;
-}
-
-.categories-list-item__list-second {
-  position: absolute;
-  left: 310px;
-  top: 0px;
-  border-left: 10px solid transparent;
-  transition: 0.5s opacity;
-}
-.categories-list-item:hover .categories-list-item__list-second {
-  opacity: 1;
-}
-.categories-list-item__list-second__item__list-third {
-  border-left: 10px solid transparent;
-  transition: 0.5s opacity;
-  position: absolute;
-  left: 300px;
-  top: 0px;
-} */
 
 .categories-list li {
   position: relative;
-}
-.categories-list li a:hover {
-  /* background-color: #2a323f; */
-}
-.categories-list li :hover .categories-list-item__list-second {
-  display: block;
-}
-.categories-list
-  li:hover
-  .categories-list-item__list-second
-  li
-  .categories-list-item__list-second__item__list-third {
-  display: none;
-}
-/* ul li a {
-  color: #fff;
-  padding: 10px 20px;
-  display: block;
-  text-decoration: none;
-  font-weight: bold;
-}
-ul li a:hover {
-  background-color: #5d99cf;
-  color: #fff;
-} */
-.categories-list
-  li
-  .categories-list-item__list-second
-  li:hover
-  .categories-list-item__list-second__item__list-third {
-  display: block;
-}
-.categories-list li .categories-list-item__list-second {
-  position: absolute;
-  left: 350px;
-  top: 0px;
-  /* display: none; */
+  display: flex;
 }
 
-.categories-list-item__list-second
-  li
-  .categories-list-item__list-second__item__list-third {
-  position: absolute;
-  left: 350px;
-  top: 0px;
-  display: none;
+.categories-list li a{
+	display: block;
+	
+}
+
+.categories-list li ul{
+	position: absolute;
+	left: 300px;
+	top: 0px;
+	/* display: none; */
+  display: block;
+}
+
+/* .categories-list li:hover ul{
+	display: block;
+}
+.categories-list li:hover ul li ul{
+	display: none;
+}
+
+
+.categories-list li ul li:hover ul{
+	display: block;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img-girl {
+  background: url(/images/baby-girl1.svg);
+}
+
+.categories-list li:hover {
+  border-bottom: solid 4px #e65d40;
+}
+.categories-list li:hover .img-girl {
+  background: url(/images/baby-girl-hov.svg);
+}
+
+.baby-boy {
+  background: url(/images/baby-boy.svg);
+}
+.categories-list li:hover .baby-boy {
+  background: url(/images/baby-boy-hov.svg);
+}
+
+.diaper {
+  background: url(/images/diaper.svg);
+}
+.categories-list li:hover .diaper {
+  background: url(/images/diaper-hov.svg);
+}
+
+.teddy-bear {
+  background: url(/images/teddy-bear.svg);
+}
+.categories-list li:hover .teddy-bear {
+  background: url(/images/teddy-bear-hov.svg);
+}
+
+.feeding-bottle {
+  background: url(/images/feeding-bottle.svg);
+}
+.categories-list li:hover .feeding-bottle {
+  background: url(/images/feeding-bottle-hov.svg);
+}
+
+.stroller {
+  background: url(/images/stroller.svg);
+}
+.categories-list li:hover .stroller {
+  background: url(/images/stroller-hov.svg);
+}
+
+.by-car-seat {
+  background: url(/images/baby-car-seat.svg);
+}
+.categories-list li:hover .by-car-seat {
+  background: url(/images/baby-car-seat-hov.svg);
+}
+
+.crib {
+  background: url(/images/crib.svg);
+}
+.categories-list li:hover .crib {
+  background: url(/images/crib-hov.svg);
+}
+
+.rubber-duck {
+  background: url(/images/rubber-duck.svg);
+}
+.categories-list li:hover .rubber-duck {
+  background: url(/images/rubber-duck-hov.svg);
+}
+
+.night {
+  background: url(/images/night.svg);
+}
+.categories-list li:hover .night {
+  background: url(/images/night-hov.svg);
+}
+
+.crib-toy {
+  background: url(/images/crib-toy.svg);
+}
+.categories-list li:hover .crib-toy {
+  background: url(/images/crib-toy-hov.svg);
+}
+
+.price-tag {
+  background: url(/images/price-tag.svg);
+}
+.categories-list li:hover .price-tag {
+  background: url(/images/price-tag-hov.svg);
 }
