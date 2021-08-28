@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/list.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo-container">
+          <span class="logo-title"
+            >магазин
+            <br />
+            <span class="logo-title-two">детских товаров</span>
+          </span>
+          <a href="./index.html">
+            <img class="logo-main" src="images/logo.svg" alt="logo" />
+          </a>
+        </div>
+
+        <div class="menu-nav">
+          <nav class="navigation">
+            <ul class="site-nav">
+              <li class="site-nav-list">
+                <a class="site-nav-link" href="#">О Компании</a>
+              </li>
+              <li class="site-nav-list">
+                <a class="site-nav-link" href="#">Доставка и оплата</a>
+              </li>
+              <li class="site-nav-list">
+                <a class="site-nav-link" href="">Оптовикам</a>
+              </li>
+              <li class="site-nav-list">
+                <a class="site-nav-link" href="">Возврат</a>
+              </li>
+              <li class="site-nav-list">
+                <a class="site-nav-link" href="">Статьи</a>
+              </li>
+              <li class="site-nav-list">
+                <a class="site-nav-link" href="">FAQ</a>
+              </li>
+              <li class="site-nav-list">
+                <a class="site-nav-link" href="">Акции</a>
+              </li>
+              <li class="site-nav-list">
+                <a class="site-nav-link" href="">Контакты</a>
+              </li>
+            </ul>
+            <div class="currency-container">
+              <div class="currency-block">
+                <a href="#" class="currency-block__link js-currency active"
+                  >грн</a
+                >
+                <span>|</span>
+                <a href="#" class="currency-block__link js-currency">USD</a>
+              </div>
+              <div class="currency-block">
+                <a href="#" class="currency-block__link js-currency active"
+                  >РУС</a
+                >
+                <span>|</span>
+                <a href="#" class="currency-block__link js-currency">УКР</a>
+              </div>
+
+              <div class="registration-block">
+                <a class="registration-link" href="#"
+                  ><span>Войти</span>
+                  <img
+                    class="registration-img"
+                    src="images/lockClosed.svg"
+                    alt="lockClosed"
+                /></a>
+              </div>
+            </div>
+          </nav>
+
+          <div class="catalog-container">
+            <div class="catalog-container_block active">
+              <!-- <button class="toggle-hamburger">
+                <span></span>
+              </button> -->
+              <button class="catalog-menu btn" type="menu">
+                <img class="catalog-img" src="images/burger.svg" alt="burger" />
+
+                <span class="catalog-menu-text">Каталог товаров</span>
+              </button>
+              <img
+                class="logo-main-mob"
+                src="images/Babykroha-logo-svg.svg"
+                alt="logo-mob"
+              />
+              <div>
+                <span class="icons-navigation">
+                  <img src="./images/cart.svg" alt="cart" />
+                </span>
+                <span class="icons-content">
+                  <span>0</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="catalog-container_block_active_menu">
+              <button class="catalog-menu btn_x" type="menu">
+                <img class="catalog-img" src="images/buttonX.svg" alt="X" />
+              </button>
+
+              <div class="currency-container">
+                <div class="currency-block">
+                  <a href="#" class="currency-block__link js-currency active"
+                    >грн</a
+                  >
+                  <span>|</span>
+                  <a href="#" class="currency-block__link js-currency">USD</a>
+                </div>
+                <div class="currency-block">
+                  <a href="#" class="currency-block__link js-currency active"
+                    >РУС</a
+                  >
+                  <span>|</span>
+                  <a href="#" class="currency-block__link js-currency">УКР</a>
+                </div>
+
+                <div class="registration-block">
+                  <a class="registration-link" href="#"
+                    ><span>Войти</span>
+                    <img
+                      class="registration-img"
+                      src="images/lockClosed.svg"
+                      alt="lockClosed"
+                  /></a>
+                </div>
+              </div>
+            </div>
+
+            <form class="search-catalog">
+              <span class="search-icon">
+                <img src="./images/search.svg" alt="search" />
+              </span>
+              <input class="search-catalog-input" placeholder="Подгузники" />
+              <button type="submit" class="search-catalog__btn submit-btn">
+                Найти
+              </button>
+            </form>
+
+            <div class="contacts-tel">
+              <div class="contacts-tel_link">
+                <a href="tel:+3809845277888" class="contacts-tel-link">
+                  +38 098-452-77-88
+                </a>
+                <span class="vector2-icon">
+                  <img src="./images/vector2.svg" alt="vector2" />
+                </span>
+              </div>
+
+              <div class="icons-navigation-container">
+                <a href="#">
+                  <span class="icons-navigation">
+                    <img src="./images/scale.svg" alt="scale" />
+                  </span>
+                  <span class="icons-content">
+                    <span>0</span>
+                  </span>
+                </a>
+
+                <a href="#">
+                  <span class="icons-navigation">
+                    <img src="./images/heart.svg" alt="heart" />
+                  </span>
+                  <span class="icons-content">
+                    <span>0</span>
+                  </span>
+                </a>
+                <a id="link-summ" href="#">
+                  <div>
+                    <span class="icons-navigation">
+                      <img src="./images/cart.svg" alt="cart" />
+                    </span>
+                    <span class="icons-content">
+                      <span>0</span>
+                    </span>
+                  </div>
+                  <span class="icons-navigation-summ">14 445 грн</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="categories-container">
+        <ul class="categories-list">
+          <li class="categories-list-item">
+            <a href="#" class="img-girl"> </a>
+            <span class="categories-list-text">Девочкам</span>
+            <p><i class="arrow right"></i></p>
+            <ul class="categories-list-item__list-second">
+              <li class="categories-list-item__list-second__item">
+                <a href="#"> Подкатегория2</a>
+                <ul class="categories-list-item__list-second__item__list-third">
+                  <li>
+                    <a href="#"> Подкатегория3</a>
+                  </li>
+                  <li>
+                    <a href="#"> Подкатегория3</a>
+                  </li>
+                  <li>
+                    <a href="#"> Подкатегория3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="categories-list-item__list-second__item">
+                <a href="#"> Подкатегория2</a>
+                <ul class="categories-list-item__list-second__item__list-third">
+                  <li>
+                    <a href="#"> Подкатегория3</a>
+                  </li>
+                  <li>
+                    <a href="#"> Подкатегория3</a>
+                  </li>
+                  <li>
+                    <a href="#"> Подкатегория3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="categories-list-item__list-second__item">
+                <a href="#"> Подкатегория2</a>
+                <ul class="categories-list-item__list-second__item__list-third">
+                  <li>Подкатегория3</li>
+                  <li>Подкатегория3</li>
+                  <li>Подкатегория3</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="baby-boy"> </a>
+            <span class="categories-list-text">Мальчикам</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="diaper"> </a>
+            <span class="categories-list-text">Малышам</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="teddy-bear"> </a>
+            <span class="categories-list-text">Игрушки</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="feeding-bottle"> </a>
+            <span class="categories-list-text">Кормление</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="stroller"> </a>
+            <span class="categories-list-text">Коляски</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="by-car-seat"> </a>
+            <span class="categories-list-text">Автокресла</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="crib"> </a>
+            <span class="categories-list-text">Мебель</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="rubber-duck"> </a>
+            <span class="categories-list-text">Гигиена</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="night"> </a>
+            <span class="categories-list-text">Всё для сна</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="crib-toy"> </a>
+            <span class="categories-list-text">Аксессуари</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="price-tag"> </a>
+            <span class="categories-list-text">Акции</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+        </ul>
+      </div> -->
+
+      <div class="categories-container">
+        <p>Каталог</p>
+        <ul class="categories-list">
+          <li class="categories-list-item">
+            <a href="#" class="img-girl"> </a>
+            <span class="categories-list-text">Девочкам</span>
+            <p><i class="arrow right"></i></p>
+            <ul class="categories-list-item__list-second">
+              <li class="categories-list-item__list-second__item">
+                <a href="#"> Девочкам2</a>
+                <ul class="categories-list-item__list-second__item__list-third">
+                  <li>
+                    <a href="#"> Девочкам3</a>
+                  </li>
+                  <li>
+                    <a href="#"> Девочкам3</a>
+                  </li>
+                  <li>
+                    <a href="#"> Девочкам3</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="categories-list-item__list-second__item">
+                <a href="#"> Подкатегория2</a>
+                <ul class="categories-list-item__list-second__item__list-third">
+                  <li>
+                    <a href="#"> Подкатегория3</a>
+                  </li>
+                  <li>
+                    <a href="#"> Подкатегория3</a>
+                  </li>
+                  <li>
+                    <a href="#"> Подкатегория3</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="categories-list-item__list-second__item">
+                <a href="#"> Подкатегория2</a>
+                <ul class="categories-list-item__list-second__item__list-third">
+                  <li>Подкатегория3</li>
+                  <li>Подкатегория3</li>
+                  <li>Подкатегория3</li>
+                </ul>
+              </li> -->
+            </ul>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="baby-boy"> </a>
+            <span class="categories-list-text">Мальчикам</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="diaper"> </a>
+            <span class="categories-list-text">Малышам</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="teddy-bear"> </a>
+            <span class="categories-list-text">Игрушки</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="feeding-bottle"> </a>
+            <span class="categories-list-text">Кормление</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="stroller"> </a>
+            <span class="categories-list-text">Коляски</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="by-car-seat"> </a>
+            <span class="categories-list-text">Автокресла</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="crib"> </a>
+            <span class="categories-list-text">Мебель</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="rubber-duck"> </a>
+            <span class="categories-list-text">Гигиена</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="night"> </a>
+            <span class="categories-list-text">Всё для сна</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="crib-toy"> </a>
+            <span class="categories-list-text">Аксессуари</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+          <li class="categories-list-item">
+            <a href="#" class="price-tag"> </a>
+            <span class="categories-list-text">Акции</span>
+            <p><i class="arrow right"></i></p>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="main-container">
+        <div class="burger">
+          <span class="burger__center active"></span>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-block">
+      <div class="footer-container">
+        <div class="footer-contacts-container">
+          <form class="search-catalog footer">
+            <span class="label-footer">Подписка на рассылку (без спама)</span>
+            <input class="search-catalog-input footer" placeholder="E-mail" />
+            <button type="submit" class="search-catalog__btn footer">
+              Подписаться
+            </button>
+          </form>
+          <span class="label-footer consultation">Консультации</span>
+          <div class="contacts-block-footer">
+            <ul class="contacts-tel-list-footer">
+              <li>
+                <a href="tel:+3809845277888" class="contacts-tel-link-footer">
+                  +38 098-452-77-88</a
+                >
+              </li>
+              <li>
+                <a href="tel:+3806345277888" class="contacts-tel-link-footer">
+                  +38 063-452-77-88</a
+                >
+              </li>
+              <li>
+                <a href="tel:+3809945277888" class="contacts-tel-link-footer">
+                  +38 099-452-77-88</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380800300503" class="contacts-tel-link-footer">
+                  +38 080-030-05-03</a
+                >
+              </li>
+            </ul>
+
+            <div class="contacts-block-footer__social">
+              <div class="contacts-tel-block">
+                <a class="contacts-tel-link tel-block" href="#">
+                  Перезвоните мне
+                </a>
+                <a class="contacts-tel-link" href="mailto:info@babykroha.com">
+                  info@babykroha.com
+                </a>
+                <span>Каждый день с 09:00 - 18:00</span>
+              </div>
+              <ul class="social-list">
+                <li>
+                  <a href="#">
+                    <img src="./images/facebook.svg" alt="facebook" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/instagram.svg" alt="instagram" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="./images/twitter.svg" alt="twitter" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-catalog-container">
+          <div>
+            <span class="categories-title-footer">Каталог</span>
+            <ul>
+              <li class="categories-list-item_footer">
+                <a href="#">Аксессуари</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Гигиена</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Девочкам</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Игрушки</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Мальчикам</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Новорожденным</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Кормление и питание</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Товары для сна</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Коляски и автокресла</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Детская мебель</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Скидки</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="customer-block">
+            <span class="categories-title-footer">Покупателю</span>
+            <ul>
+              <li class="categories-list-item_footer">
+                <a href="#">Оптовикам и дропам</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Контакты</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Доставка и оплата</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Возврат</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">О нас</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Статьи</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Помощь</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Карта сайта</a>
+              </li>
+              <li class="categories-list-item_footer">
+                <a href="#">Консультации</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-payment">
+          <img src="./images/Visa.svg" alt="viza" />
+          <img src="./images/Mastercard.svg" alt="Mastercard" />
+        </div>
+        <div class="footer-bottom_copyright">
+          <p>
+            Copyright © 2016 - 2021 babykroha.ua - официальный интернет-магазин
+            детских товаров. Все права защищены
+          </p>
+        </div>
+
+        <div class="footer-bottom_wezom">
+          <p>Разработка интернет магазина — Wezom</p>
+          <img src="./images/Vezom.svg" alt="Vezom" />
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+    
+      $(document).ready(function () {
+        $(".btn").click(function () {
+          $(".catalog-container_block").removeClass("active");
+          $(".icons-navigation-container").addClass("active");
+          $(".categories-container").addClass("active");
+          $(".catalog-container_block_active_menu").addClass("active");
+        });
+        $(".btn_x").click(function () {
+          $(".catalog-container_block_active_menu").removeClass("active");
+          $(".categories-container").removeClass("active");
+          $(".icons-navigation-container").removeClass("active");
+          $(".catalog-container_block").addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
