@@ -262,10 +262,17 @@
 }
 
 .contacts-tel_link {
-  margin-right: 80px;
+  /* margin-right: 80px; */
   display: flex;
   align-items: center;
 }
+/* 
+@media screen and (max-width: 1542px) {
+  .contacts-tel {
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+} */
 
 @media screen and (max-width: 1485px) {
   .contacts-tel {
