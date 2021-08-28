@@ -299,14 +299,17 @@
       <div class="categories-container">
         <p>Каталог</p>
         <ul class="categories-list">
-          <li >
-            <a href="#" class="img-girl"></a>
-            <span class="categories-list-text">Девочкам</span>
-            <p><i class="arrow right"></i></p>
-            <ul >
-              <li >
+          <li style="position: relative">
+            <div style="display: flex">
+              <a href="#" class="img-girl"></a>
+              <span class="categories-list-text">Девочкам</span>
+              <p><i class="arrow right"></i></p>
+            </div>
+
+            <ul class="submenu">
+              <li>
                 <a href="#"> Девочкам2</a>
-                <ul >
+                <ul class="subsubmenu">
                   <li>
                     <a href="#"> Девочкам3</a>
                   </li>
@@ -318,9 +321,9 @@
                   </li>
                 </ul>
               </li>
-              <li >
+              <li>
                 <a href="#"> Подкатегория2</a>
-                <ul >
+                <ul>
                   <li>
                     <a href="#"> Подкатегория3</a>
                   </li>
@@ -342,12 +345,12 @@
               </li> -->
             </ul>
           </li>
-          <li >
+          <li>
             <a href="#" class="baby-boy"> </a>
             <span class="categories-list-text">Мальчикам</span>
             <p><i class="arrow right"></i></p>
           </li>
-          <li >
+          <li>
             <a href="#" class="diaper"> </a>
             <span class="categories-list-text">Малышам</span>
             <p><i class="arrow right"></i></p>
@@ -575,7 +578,6 @@
       crossorigin="anonymous"
     ></script>
     <script>
-    
       $(document).ready(function () {
         $(".btn").click(function () {
           $(".catalog-container_block").removeClass("active");

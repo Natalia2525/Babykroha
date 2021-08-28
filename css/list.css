@@ -55,14 +55,13 @@ i {
   padding: 3px;
 }
 
-
 /* .categories-list { стили}
 .categories-list li{ стили}
 .categories-list li a{ стили}
 .categories-list li ul{ стили}
 .categories-list li ul li{ стили} */
 
-.categories-list {
+/* .categories-list {
   margin-top: 20px;
 }
 
@@ -81,11 +80,9 @@ i {
 	position: absolute;
 	left: 300px;
 	top: 0px;
-	/* display: none; */
   display: block;
 }
-
-
+ */
 
 /* .categories-list li:hover ul{
 	display: block;
@@ -98,34 +95,34 @@ i {
 .categories-list li ul li:hover ul{
 	display: block;
 } */
+.categories-list {
+  display: inline-block;
+}
 
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+}
 
+.categories-list li:hover .submenu {
+  display: block;
+  width: 100%;
+}
 
+.subsubmenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
 
+  display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.submenu li:hover .subsubmenu {
+  display: block;
+  width: 100%;
+}
 
 .img-girl {
   background: url(/images/baby-girl1.svg);
