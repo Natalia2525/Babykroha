@@ -206,49 +206,6 @@
   padding-top: 6px;
 }
 
-/* .categories-container {
-  background-color: #e5e5e5;
-  padding: 20px 15px;
-  border-bottom: 4px #fde52d solid;
-}
-
-.categories-list {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.categories-list-text {
-  font-family: Google Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.05em;
-  color: #4d4d4d;
-}
-
-.categories-list-item:not(:last-child) {
-  margin-right: 60px;
-}
-
-.categories-list-item img {
-  margin-bottom: 10px;
-}
-
-.categories-list-item:hover .categories-list-text {
-  color: #e65d40;
-}
-.categories-list-item a {
-  background-size: contain;
-  background-position: left;
-  display: block;
-  width: 30px;
-  height: 30px;
-  margin-bottom: 10px;
-} */
-
-
 .navigation {
   padding-bottom: 15px;
   display: flex;
@@ -262,17 +219,9 @@
 }
 
 .contacts-tel_link {
-  /* margin-right: 80px; */
   display: flex;
   align-items: center;
 }
-/* 
-@media screen and (max-width: 1542px) {
-  .contacts-tel {
-    margin-top: 30px;
-    margin-left: 25px;
-  }
-} */
 
 @media screen and (max-width: 1485px) {
   .contacts-tel {
@@ -310,9 +259,7 @@
   .catalog-container_block div {
     display: none;
   }
-  /* .catalog-container_block {
-    display: none;
-  } */
+
   .catalog-container_block_active_menu {
     display: none;
   }
@@ -322,6 +269,9 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .header {
+    border-bottom: 3px solid #fde52d;
+  }
   .header-container {
     min-width: 320px;
     padding: 15px 10px;
@@ -354,9 +304,7 @@
   .search-catalog-input {
     width: 100%;
   }
-  /* .search-catalog__btn {
-    right: 19px;
-  } */
+
   .catalog-container_block.active {
     display: flex;
     margin-bottom: 20px;
@@ -379,8 +327,7 @@
     display: none;
   }
   .icons-navigation-container.active {
-    position: absolute;
-    top: 225px;
+    display: flex;
   }
   .categories-container.active {
     display: block;
@@ -402,30 +349,8 @@
     display: block;
   }
 
-  /* .categories-list-item {
-    display: flex;
-  }
-  .categories-list-item:hover .right {
-    opacity: 1;
-  }
-  .categories-list-text {
-    margin-left: 15px;
-    margin-right: 60px;
-  }
-  i {
-    border: solid #e65d40;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-  }
-  .right {
-    opacity: 0.3;
-    transform: rotate(-45deg);
-    margin-left: 180px;
-  } */
-
   .catalog-container_block div {
-    margin-left: 30px;
+    margin-left: 20px;
   }
   .btn {
     display: flex;
@@ -434,108 +359,16 @@
     margin-left: 20px;
     align-items: center;
     cursor: pointer;
-    margin-right: 54px;
+    margin-right: 20px;
     background: transparent;
   }
   .btn_x {
     display: flex;
     border-radius: 10px;
     border: none;
-    /* margin-left: 20px; */
     align-items: center;
     cursor: pointer;
     margin-right: 54px;
     background: transparent;
   }
-}
-
-/* .main-container {
-  width: 1000px;
-  margin: 0 auto;
-}
-.burger__center {
-  display: block;
-  position: relative;
-  width: 50px;
-  height: 5px;
-  border-bottom: 2px solid #000;
-}
-
-.burger__center::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 0;
-  width: 50px;
-  height: 5px;
-  border-bottom: 2px solid #000;
-}
-.burger__center::after {
-  content: "";
-  position: absolute;
-  top: -20px;
-  left: 0;
-  width: 50px;
-  height: 5px;
-  border-bottom: 2px solid #000;
-}
-
-.burger__center.active::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 0;
-  width: 50px;
-  height: 5px;
-  border-bottom: 2px solid #000;
-  transform: rotate(45deg);
-} */
-
-.toggle-hamburger {
-  background-color: transparent;
-  display: block;
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  border: none;
-  border-radius: none;
-  cursor: pointer;
-  margin-right: 35px;
-}
-
-.toggle-hamburger span {
-  display: block;
-  position: relative;
-  width: 45px;
-  border-bottom: 3px solid #000;
-}
-.toggle-hamburger span::before,
-.toggle-hamburger span::after {
-  position: absolute;
-  display: block;
-  left: 0;
-  width: 100%;
-  border-bottom: 3px solid #000;
-  content: "";
-}
-.toggle-hamburger span::before {
-  top: -20px;
-}
-.toggle-hamburger span::after {
-  bottom: -20px;
-}
-
-.toggle-hamburger.is-active span::before {
-  top: 0;
-  transform: rotate(45deg);
-}
-.toggle-hamburger.is-active span::after {
-  bottom: -3px;
-  transform: rotate(-45deg);
-}
-
-.toggle-hamburger.is-active span {
-  border-bottom: none;
 }
