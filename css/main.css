@@ -3,7 +3,7 @@
 }
 
 .header-container {
-  min-width: 768px;
+  width: 1520px;
   display: flex;
   background-color: #e2e9f2;
   padding: 15px 15px;
