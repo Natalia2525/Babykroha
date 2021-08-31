@@ -10,6 +10,13 @@
   margin: 0 auto;
 }
 
+.logo-container {
+  text-align: center;
+}
+
+.logo-main {
+  display: inline-block;
+}
 .logo-title {
   font-family: Google Sans;
   font-style: normal;
@@ -30,6 +37,13 @@
   /* margin-right: 60px; */
 }
 .site-nav-list {
+  margin-right: 15px;
+}
+
+.site-nav-list:hover .site-nav-link {
+  color: #e65d40;
+}
+.site-nav-link {
   font-family: Google Sans;
   font-style: normal;
   font-weight: normal;
@@ -37,12 +51,11 @@
   line-height: 14px;
   display: flex;
   color: #666666;
-  margin-right: 15px;
 }
-
 .currency-block {
   display: flex;
   margin-left: 30px;
+  align-items: baseline;
 }
 
 .currency-block__link {
@@ -185,7 +198,6 @@
   text-align: center;
   position: relative;
   background: #e65d40;
-
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
@@ -209,13 +221,15 @@
 .navigation {
   padding-bottom: 15px;
   display: flex;
+  align-items: center;
 }
 
 .currency-container {
   display: flex;
   align-items: center;
-  width: 50%;
-  justify-content: center;
+
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .contacts-tel_link {
@@ -285,7 +299,8 @@
     display: flex;
     margin-bottom: 30px;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+    position: relative;
   }
   .catalog-container_block {
     display: none;
@@ -370,5 +385,11 @@
     cursor: pointer;
     margin-right: 54px;
     background: transparent;
+    position: absolute;
+    top: 13px;
+    left: 15px;
+  }
+  .footer-bottom_copyright {
+    text-align: center;
   }
 }
