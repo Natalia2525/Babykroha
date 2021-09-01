@@ -1,8 +1,18 @@
-.categories-container {
+.categories-container.active {
+  display: block;
   width: 1550px;
   padding: 0px 15px;
+
   border-bottom: 4px #fde52d solid;
   margin: 0 auto;
+  opacity: 1;
+  visibility: visible;
+}
+
+.categories-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s linear;
 }
 
 .colums-style__list {

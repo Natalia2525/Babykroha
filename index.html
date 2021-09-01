@@ -85,7 +85,7 @@
               <!-- <button class="toggle-hamburger">
                 <span></span>
               </button> -->
-              <button class="catalog-menu btn" type="menu">
+              <button class="catalog-menu " type="menu">
                 <img class="catalog-img" src="images/burger.svg" alt="burger" />
 
                 <span class="catalog-menu-text">Каталог товаров</span>
@@ -5069,21 +5069,27 @@
     ></script>
     <script>
       $(document).ready(function () {
-        $(".btn").click(function () {
-          $(".catalog-container_block").removeClass("active");
-          $(".icons-navigation-container").addClass("active");
-          $(".categories-container").addClass("active");
-          $(".catalog-container_block_active_menu").addClass("active");
-        });
-        $(".btn_x").click(function () {
-          $(".catalog-container_block_active_menu").removeClass("active");
+        // $(".btn").click(function () {
+        //   $(".catalog-container_block").removeClass("active");
+        //   $(".icons-navigation-container").addClass("active");
+        //   $(".categories-container").addClass("active");
+        //   $(".catalog-container_block_active_menu").addClass("active");
+        // });
+        // $(".btn_x").click(function () {
+        //   $(".catalog-container_block_active_menu").removeClass("active");
+        //   $(".categories-container").removeClass("active");
+        //   $(".icons-navigation-container").removeClass("active");
+        //   $(".catalog-container_block").addClass("active");
+        // });
+
+        $(".catalog-menu").click(function () {
+          $(".categories-container").toggleClass("active");
+            });
+            $(".btn-close").click(function () {
           $(".categories-container").removeClass("active");
-          $(".icons-navigation-container").removeClass("active");
-          $(".catalog-container_block").addClass("active");
-        });
+            });
       });
     </script>
   </body>
 </html>
-
 
