@@ -140,7 +140,7 @@ i {
 
 .categories-list li ul h2 {
   border-bottom: solid 4px #fff;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .categories-list li ul li {
   margin-bottom: 10px;
@@ -182,7 +182,7 @@ i {
   padding-left: 40px;
   display: none;
   background-color: #ffffff;
-  width: 852px;
+  width: 880px;
 }
 
 .categories-list li ul li ul h2 {
