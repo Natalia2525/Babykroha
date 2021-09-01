@@ -1,25 +1,27 @@
 .footer-container {
   display: flex;
-  padding-bottom: 20px;
+  padding-bottom: 55px;
   flex-wrap: wrap;
+  padding-top: 65px;
 }
 .footer-block {
   background-color: #e2e9f2;
-  padding: 15px 15px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  width: 1550px;
   margin: 0 auto;
 }
 .search-catalog.footer {
   display: block;
 }
 .search-catalog-input.footer {
-  /* width: 572px; */
-  width: 100%;
+  width: 623px;
 }
 
 .search-catalog__btn.footer {
   width: 145px;
   top: 52px;
-  right: 1px;
+  right: 18px;
 }
 
 .label-footer {
@@ -49,7 +51,7 @@
   margin-right: 52px;
 }
 .contacts-tel-list-footer li {
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .contacts-tel-link-footer {
   font-family: Google Sans;
@@ -70,11 +72,11 @@
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.3;
   display: flex;
   align-items: center;
   color: #4d4d4d;
-  margin-top: 104px;
+  margin-top: 60px;
 }
 
 .social-list {
@@ -103,18 +105,18 @@
 
 .footer-catalog-container {
   display: flex;
-  margin-left: 60px;
+  margin-left: 426px;
 }
 
 .footer-catalog-container ul {
   width: max-content;
 }
-.categories-list-item_footer {
+.categories-list-item_footer a {
   font-family: Google Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 2.14;
   color: #4d4d4d;
   margin-bottom: 3px;
 }
@@ -126,7 +128,8 @@
 }
 
 .footer-bottom {
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   border-top: 2px #d6dee8 solid;
   display: flex;
   padding-left: 20px;
