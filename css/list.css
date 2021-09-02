@@ -61,7 +61,7 @@
   align-items: center;
   border-bottom: solid 4px rgba(0, 0, 0, 0);
   transition: border-color 0.5s linear;
-  padding-bottom: 11px;
+  /* padding-bottom: 11px; */
 }
 
 .categories-list li:first-child li {
@@ -150,7 +150,7 @@ i {
 
 .categories-list li ul h2 {
   border-bottom: solid 4px #fff;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .categories-list li ul li {
   margin-bottom: 10px;
@@ -186,7 +186,7 @@ i {
 } */
 .categories-list li ul li {
   padding-left: 20px;
-  margin-bottom: 7px;
+  margin-bottom: 2px;
 }
 .categories-list li ul li ul {
   padding-left: 40px;
@@ -274,89 +274,23 @@ i {
   }
 }
 
-.img-girl {
-  background: url(/images/baby-girl1.svg);
+.categories-container li a img {
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+.categories-container li a img.navMenu2__img__active {
+  margin-bottom: 10px;
+  width: 30px;
+  height: 30px;
+  display: none;
 }
 
-.categories-list li:hover .img-girl {
-  background: url(/images/baby-girl-hov.svg);
+.categories-container li:hover a img.navMenu2__img__active {
+  display: inline-block;
+}
+.categories-container li:hover a img {
+  display: none;
 }
 
-/* .navMenu2 ul li:hover  */
-
-.baby-boy {
-  background: url(/images/baby-boy.svg);
-}
-.categories-list li:hover .baby-boy {
-  background: url(/images/baby-boy-hov.svg);
-}
-
-.diaper {
-  background: url(/images/diaper.svg);
-}
-.categories-list li:hover .diaper {
-  background: url(/images/diaper-hov.svg);
-}
-
-.teddy-bear {
-  background: url(/images/teddy-bear.svg);
-}
-.categories-list li:hover .teddy-bear {
-  background: url(/images/teddy-bear-hov.svg);
-}
-
-.feeding-bottle {
-  background: url(/images/feeding-bottle.svg);
-}
-.categories-list li:hover .feeding-bottle {
-  background: url(/images/feeding-bottle-hov.svg);
-}
-
-.stroller {
-  background: url(/images/stroller.svg);
-}
-.categories-list li:hover .stroller {
-  background: url(/images/stroller-hov.svg);
-}
-
-.by-car-seat {
-  background: url(/images/baby-car-seat.svg);
-}
-.categories-list li:hover .by-car-seat {
-  background: url(/images/baby-car-seat-hov.svg);
-}
-
-.crib {
-  background: url(/images/crib.svg);
-}
-.categories-list li:hover .crib {
-  background: url(/images/crib-hov.svg);
-}
-
-.rubber-duck {
-  background: url(/images/rubber-duck.svg);
-}
-.categories-list li:hover .rubber-duck {
-  background: url(/images/rubber-duck-hov.svg);
-}
-
-.night {
-  background: url(/images/night.svg);
-}
-.categories-list li:hover .night {
-  background: url(/images/night-hov.svg);
-}
-
-.crib-toy {
-  background: url(/images/crib-toy.svg);
-}
-.categories-list li:hover .crib-toy {
-  background: url(/images/crib-toy-hov.svg);
-}
-
-.price-tag {
-  background: url(/images/price-tag.svg);
-}
-.categories-list li:hover .price-tag {
-  background: url(/images/price-tag-hov.svg);
-}

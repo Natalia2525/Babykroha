@@ -345,6 +345,10 @@
     padding: 15px 10px;
     justify-content: center;
   }
+
+  .navMenu2Wrap {
+    display: none;
+  }
   .catalog-container_block_active_menu {
     display: none;
   }
