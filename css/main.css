@@ -106,7 +106,8 @@
 
 .registration-block {
   display: flex;
-  margin-left: 360px;
+  /* margin-left: 360px; */
+  margin-left: 20%;
   align-items: center;
 }
 
@@ -290,6 +291,12 @@
   margin-left: 62px;
 }
 
+@media screen and (max-width: 1520px) {
+  .navMenu2Wrap {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1485px) {
   .contacts-tel {
     margin-top: 30px;
@@ -308,7 +315,15 @@
     margin-top: 10px;
   }
 }
+
 @media screen and (min-width: 768px) {
+  .header-container {
+    min-width: 768px;
+  }
+
+  .navMenu2Wrap {
+    min-width: 768px;
+  }
   .catalog-menu {
     display: flex;
     background: #fde52d;
@@ -348,6 +363,13 @@
 
   .navMenu2Wrap {
     display: none;
+  }
+
+  .logo-container {
+    width: auto;
+  }
+  .catalog-menu {
+    background-color: transparent;
   }
   .catalog-container_block_active_menu {
     display: none;
