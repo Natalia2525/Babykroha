@@ -9,6 +9,8 @@
 }
 
 .navMenu2Wrap {
+  position: relative;
+  z-index: 3;
   display: block;
   width: 1550px;
   padding: 0px 15px;
@@ -59,16 +61,26 @@
 .navMenu2 ul li:hover ul {
   display: block;
 }
-
+/* 
 .navMenu2 ul li:hover ul li {
   border-bottom: solid 2px transparent;
 }
 
 .navMenu2 ul li:hover ul ul li {
   border-bottom: solid 2px transparent;
-}
+} */
 .navMenu2 ul li:hover {
   border-bottom: solid 4px #e65d40;
+}
+.navMenu2 ul li:hover li {
+  border: none !important;
+}
+.navMenu2 ul li:hover li a {
+  text-decoration: none;
+  border: none !important;
+}
+.navMenu2 ul li:hover li a:hover {
+  text-decoration: underline;
 }
 
 .navMenu2 ul li a {

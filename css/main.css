@@ -23,12 +23,12 @@
   font-style: normal;
 }
 .header-container {
-  width: 1550px;
   display: flex;
   background-color: #e2e9f2;
   padding: 15px 15px;
-  margin: 0 auto;
+  
 }
+
 
 .logo-container {
   text-align: center;
@@ -106,9 +106,10 @@
 
 .registration-block {
   display: flex;
-  /* margin-left: 360px; */
-  margin-left: 20%;
+  margin-left: 360px;
+
   align-items: center;
+  position: relative;
 }
 
 .registration-link {
@@ -130,7 +131,10 @@
   color: #18192e;
 }
 .registration-img {
-  margin-left: 15px;
+  /* margin-left: 15px; */
+  position: absolute;
+  right: -30px;
+  bottom: -2px;
 }
 .catalog-container {
   display: flex;
@@ -185,7 +189,7 @@
   position: absolute;
   right: 0px;
   border: none;
-  background: rgba(253, 229, 45, 0.5);
+  background: #fde52d;
   border-radius: 5px;
   width: 108px;
   height: 50px;
@@ -305,15 +309,19 @@
   .search-catalog {
     margin-right: 0px;
   }
+  .currency-container {
+    order: 1;
+    margin-top: 10px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .navigation {
     flex-wrap: wrap;
   }
-  .currency-container {
+  /* .currency-container {
     margin-top: 10px;
-  }
+  } */
 }
 
 @media screen and (min-width: 768px) {
