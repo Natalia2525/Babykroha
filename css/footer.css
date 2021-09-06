@@ -178,17 +178,29 @@
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer-block {
+    max-width: 767px;
+  }
   .footer-catalog-container {
     display: none;
   }
+
+  .catalog-menu {
+    background-color: transparent;
+    border: none;
+    margin-right: 30px;
+  }
   .contacts-block-footer__social {
     display: block;
+  }
+  .search-catalog-input.footer {
+    width: 100%;
   }
   .search-catalog.footer {
     padding-left: 20px;
   }
   .contacts-tel-link-footer {
-    font-size: 16px;
+    font-size: 14px;
   }
   .social-list {
     margin-left: 0px;
@@ -205,5 +217,14 @@
   }
   .footer-bottom_wezom {
     margin-left: 0px;
+  }
+  .categories-container {
+    max-width: 767px;
+  }
+  .contacts-tel-link {
+    font-size: 14px;
+  }
+  .search-catalog__btn.footer {
+    right: 0px;
   }
 }
